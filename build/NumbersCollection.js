@@ -17,8 +17,8 @@ var NumbersCollection = /** @class */ (function () {
     };
     NumbersCollection.prototype.swap = function (leftIndex, rightIndex) {
         var leftHand = this.data[leftIndex];
-        this.data[rightIndex] = this.data[leftIndex];
-        this.data[leftIndex] = leftHand;
+        this.data[leftIndex] = this.data[rightIndex];
+        this.data[rightIndex] = leftHand;
     };
     return NumbersCollection;
 }());
